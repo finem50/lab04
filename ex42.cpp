@@ -1,6 +1,6 @@
 //What would you do to get both values updated upon your return to the main?
 //Make the necessary changes and run the program to make sure it works correctly.
-//INCOMPLETE
+
 //This function illustrates how a function can return two values
 #include <iostream>
 using namespace std;
@@ -9,7 +9,7 @@ using namespace std;
 void get_input(int& i, int& j);
 
 //This is the declaration for the function that adds 10 to i and 20 to j
-void process(int& i, int j);
+void process(int& i, int& j);
 
 int main(){
 
@@ -21,7 +21,7 @@ int main(){
 
   process(i, j);
 
-  cout << "I just came back from function Process, i = " << i << " j = " << endl;
+  cout << "I just came back from function Process, i = " << i << " j = " << j << endl;
 
   return 0;
 }
@@ -34,7 +34,7 @@ void get_input(int& i, int& j){
   return; //a void function, returns nothing
 }
 
-void process(int& i, int j){
+void process(int& i, int& j){
 
   i = i + 10;
   j = j + 20;
